@@ -1,0 +1,26 @@
+
+// tener en cuenta q se llama las clases dentro del mismo
+.main-nav {
+    background-color: #1f5bbd;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+
+    .nav-links {
+        padding: 2rem;
+
+        .nav-item {
+            text-decoration: none;
+            color: white;
+// aplicar css dentro de una clase doble agregamos un & para llamarlo
+            &.active {
+                color: #49d546;
+                font-weight: bold;
+            }
+            &:hover {
+                font-size: 1.2rem;
+                color: darkred;
+            }
+        }
+    }
+}
