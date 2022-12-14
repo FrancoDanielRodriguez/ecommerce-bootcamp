@@ -8,21 +8,131 @@
     <title>home - ecommerce</title>
 </head>
 <body>
+<!-- ? INICIO DEL HEADER -->
     <header>
-        <nav class="main-nav">
-            <div class="nav-links">
-                <a href="" class="nav-item active">link 1</a>
-                <a href="" class="nav-item">link 2</a>
-                <a href="" class="nav-item">link 3</a>
-                <a href="" class="nav-item">link 4</a>
-            </div>
+        <nav class="navbar">
+                <!-- ? ICONO DE LA PAGINA -->
+                <a href="/index.html" class="navbar__nav-link">
+                    <img class="navbar__logo" src="/assets/image/logo.png" alt="logo de la empresa" width="50">
+                </a>
+                <!-- ? LOS "NAV" DEL HEADER -->
+                <ul class="navbar__nav-link-container">
+                    <li class="navbar__nav-item">
+                        <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+                    </li>
+                </ul>
         </nav>
+                <!-- ? AGREGAR ICONO DE CARRITO DE COMPRAS Y USUARIO -->
+        <div class="user-navbar">
+            <div class="user-navbar__cart-icon-container">
+                <!-- TODO: add font icon and icon item (agregar icono carrito de compras) -->
+            </div>
+                <!-- TODO: agregar un icono de avatar de usuario -->
+        </div>
     </header>
-    <main></main>
-    <footer>
-        <!-- <div>footer 1</div>
-        <div>footer 2</div>
-        <div>footer 3</div> -->
+    <!-- TODO: Implementar carousel en 2do modulo -->
+    <!-- <div class="carousel-container"></div> -->
+<!-- ! Fin del header -->
+<!-- ? INICIO DEL MAIN -->
+    <main>
+        <section class="section-cards">
+            <!-- ? TITULO Y SUBTITULO DEL MAIN header -->
+            <header class="section-cards__header">
+                <div class="section-cards__title-container">
+                    <h1 class="section-cards__tittle">Lorem ipsum dolor sit amet.</h1>
+                    <p class="section-cards__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum praesentium ex dolore, fugiat ad deserunt.</p>
+                </div>
+            <!-- ? BUSCADOR E INFORMACION -->
+                <div class="section-cards__products-search-container">
+                    <!-- ? BUSCADOR -->
+                    <div class="product-search">
+                        <label for="" class="product-search__laber">Buscar</label>
+                        <input type="text" class="product-search__input">
+                        <button class="product-search__btn">Buscar</button>
+                    </div>
+                    <!-- ? DATOS DEL PRODUCTO -->
+                    <div class="section-cards__products-count">
+                        se encontraro X productos
+                    </div>
+                </div>
+            </header>
+            <!-- ! fin del header (dentro de main) -->
+            <!-- ? TARJETA DE LOS PRODUCTOS -->
+            <div class="cards-container">
+                <h1 class="cards-container__category">CATEGORIA: OFERTAS</h1>
+                <article class="card">
+                        <!-- ? IMAGEN DE LA TARJETA -->
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                        <!-- ? BODY DE LA TARJETA CON DESCRIPCION CON TITULO, DESCRIPCION Y PRECIO -->
+                    <div class="card__body">
+                        <div class="card__tittle">
+                            PRODUCT NAME
+                        </div>
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo dolorem consequuntur blanditiis sequi iure quisquam eaque! Officia dignissimos magni neque tenetur, nobis pariatur numquam nisi ipsum asperiores id laborum.</p>
+                        <div class="card__price">
+                            $ xxxx
+                        </div>
+                    </div>
+                        <!-- ? FOOTER DE LA TARJETA CON DATOS Y BOTON -->
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">Detalle</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+<!-- ! Fin del main -->
+    <!-- ? WHATSAPP LOGO Y LINK -->
+    <div class="whatsapp-container">
+        <a href="#" class="whatsapp-container__link">
+            <img src="#" alt="Whatsapp contact link" class="whatsapp-container__img">
+        </a>
+    </div>
+<!-- ? INICIO DEL FOOTER -->
+    <footer class="footer">
+            <!-- ? AGREGAR ICONO QUE TE LLEVE A UNA RED SOCIAL -->
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">Facebook ICONO</a>
+                    <a href="#" class="footer__contact-link">Instagram ICONO</a>
+                    <a href="#" class="footer__contact-link">LinkedIn ICONO</a>
+                </li>
+            </ul>
+        </div>
+            <!-- ? COLUMNA CON NOMBRE DE LA EMPRESA Y COPYRIGTH -->
+        <div class="footer__column">
+            <img src="#" alt="logo de empresa" class="footer__logo">
+            <h1 class="footer__company-name">NOMBRE DE LA EMPRESA</h1>
+            <p class="footer__copyrigth">Todos los derechos reservados de pepito</p>
+        </div>
+            <!-- ?  -->
+        <div class="footer__column">
+            <ul class="footer__contact-container">
+                <li class="footer__contact-item">
+                    <a href="#" class="footer__contact-link">Telefono</a>
+                    <a href="#" class="footer__contact-link">Localizacion</a>
+                    <a href="#" class="footer__contact-link">Email</a>
+                </li>
+            </ul>
+        </div>
     </footer>
+<!-- ! Fin del footer -->
 </body>
 </html>
