@@ -10,12 +10,19 @@
 </head>
 <body>
 <!-- ? INICIO DEL HEADER -->
-    <header>
+    <header class="header">
         <nav class="navbar">
                 <!-- ? ICONO DE LA PAGINA -->
                 <a href="/index.html" class="navbar__nav-link">
-                    <img class="navbar__logo" src="/assets/image/logo.png" alt="logo de la empresa" width="50">
+                    <img class="navbar__logo" src="/assets/image/logo.png" alt="logo de la empresa">
                 </a>
+
+                <!-- ? HAMBURGUESA -->
+                <input type="checkbox" class="navbar__menu-btn" id="manu-btn">
+                <label class="navbar__menu-label" for="">
+                    <span class="navbar__menu-icon"></span>
+                </label>
+
                 <!-- ? LOS "NAV" DEL HEADER -->
                 <ul class="navbar__nav-link-container">
                     <li class="navbar__nav-item">
@@ -96,6 +103,90 @@
                     </div>
                 </article>
             </div>
+            <div class="cards-container">
+                <h1 class="cards-container__category">CATEGORIA: OFERTAS</h1>
+                <article class="card">
+                        <!-- ? IMAGEN DE LA TARJETA -->
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                        <!-- ? BODY DE LA TARJETA CON DESCRIPCION CON TITULO, DESCRIPCION Y PRECIO -->
+                    <div class="card__body">
+                        <div class="card__tittle">
+                            PRODUCT NAME
+                        </div>
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo dolorem consequuntur blanditiis sequi iure quisquam eaque! Officia dignissimos magni neque tenetur, nobis pariatur numquam nisi ipsum asperiores id laborum.</p>
+                        <div class="card__price">
+                            $ xxxx
+                        </div>
+                    </div>
+                        <!-- ? FOOTER DE LA TARJETA CON DATOS Y BOTON -->
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">Detalle</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards-container">
+                <h1 class="cards-container__category">CATEGORIA: OFERTAS</h1>
+                <article class="card">
+                        <!-- ? IMAGEN DE LA TARJETA -->
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                        <!-- ? BODY DE LA TARJETA CON DESCRIPCION CON TITULO, DESCRIPCION Y PRECIO -->
+                    <div class="card__body">
+                        <div class="card__tittle">
+                            PRODUCT NAME
+                        </div>
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo dolorem consequuntur blanditiis sequi iure quisquam eaque! Officia dignissimos magni neque tenetur, nobis pariatur numquam nisi ipsum asperiores id laborum.</p>
+                        <div class="card__price">
+                            $ xxxx
+                        </div>
+                    </div>
+                        <!-- ? FOOTER DE LA TARJETA CON DATOS Y BOTON -->
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">Detalle</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="cards-container">
+                <h1 class="cards-container__category">CATEGORIA: OFERTAS</h1>
+                <article class="card">
+                        <!-- ? IMAGEN DE LA TARJETA -->
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                        <!-- ? BODY DE LA TARJETA CON DESCRIPCION CON TITULO, DESCRIPCION Y PRECIO -->
+                    <div class="card__body">
+                        <div class="card__tittle">
+                            PRODUCT NAME
+                        </div>
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo dolorem consequuntur blanditiis sequi iure quisquam eaque! Officia dignissimos magni neque tenetur, nobis pariatur numquam nisi ipsum asperiores id laborum.</p>
+                        <div class="card__price">
+                            $ xxxx
+                        </div>
+                    </div>
+                        <!-- ? FOOTER DE LA TARJETA CON DATOS Y BOTON -->
+                    <div class="card__footer">
+                        <div class="card__date">
+                            13/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">Detalle</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 <!-- ! Fin del main -->
@@ -128,7 +219,7 @@
         </div>
             <!-- ? COLUMNA CON NOMBRE DE LA EMPRESA Y COPYRIGTH -->
         <div class="footer__column">
-            <img src="/ecommerce-bootcamp/assets/image/logo.png" alt="logo de empresa" class="footer__logo">
+            <img src="/assets/image/logo.png" alt="logo de empresa" class="footer__logo" width="50">
             <h1 class="footer__company-name">NOMBRE DE LA EMPRESA</h1>
             <p class="footer__copyrigth">Todos los derechos reservados de pepito</p>
         </div>

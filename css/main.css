@@ -15,24 +15,104 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
-.main-nav {
-  background-color: #d87064;
-  height: 4rem;
+.header {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #1b1a1a;
   display: flex;
   align-items: center;
+  position: relative;
 }
-.main-nav .nav-links {
-  padding: 2rem;
+.navbar__logo {
+  height: 50px;
 }
-.main-nav .nav-links .nav-item {
-  text-decoration: none;
+.navbar__menu-label {
+  color: #fefefe;
+  margin-left: auto;
+  height: 42px;
+  background-color: orangered;
+  width: 44px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__menu-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.navbar__menu-btn:checked ~ .navbar__nav-link-container {
+  height: calc(100vh - 50px);
+}
+.navbar__menu-btn:checked ~ .navbar__menu-label .navbar__menu-icon {
+  background-color: transparent;
+}
+.navbar__menu-btn:checked ~ .navbar__menu-label .navbar__menu-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.navbar__menu-btn:checked ~ .navbar__menu-label .navbar__menu-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.navbar__menu-icon {
+  height: 2px;
+  background-color: #fefefe;
+  width: 18px;
+  position: relative;
+}
+.navbar__menu-icon::after, .navbar__menu-icon::before {
+  content: "";
+  height: 2px;
+  background-color: #fefefe;
+  position: absolute;
+  width: 100%;
+  transition: all 0.2s ease-out;
+}
+.navbar__menu-icon::after {
+  top: 5px;
+}
+.navbar__menu-icon::before {
+  top: -5px;
+}
+.navbar__nav-link-container {
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  background-color: red;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar__nav-item {
+  padding: 0.75rem 1rem;
+}
+.navbar__nav-item:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+.navbar__nav-link {
   color: #fefefe;
 }
-.main-nav .nav-links .nav-item.active {
-  color: #49d546;
-  font-weight: bold;
-}
-.main-nav .nav-links .nav-item:hover {
-  font-size: 1.2rem;
-  color: darkred;
+
+@media screen and (min-width: 600px) {
+  .navbar__menu-label, .navbar__menu-btn {
+    display: none;
+  }
+  .navbar__nav-link-container {
+    position: static;
+    flex-direction: row;
+    height: 100% !important;
+    width: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
